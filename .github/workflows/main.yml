@@ -1,5 +1,4 @@
 name: linting, testing, building
-run-name: ${{ github.actor }}
 on:
   push:
     branches: [ master ]
