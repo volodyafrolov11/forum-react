@@ -1,4 +1,4 @@
-last: 24 time: 11:45
-current: 24
+last: 25 time: ~15:00
+current: 25
 
 // Разобраться с ThemeProvider
