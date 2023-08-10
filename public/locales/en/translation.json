@@ -5,5 +5,7 @@
   "Обновить страницу": "Reload Page",
   "О нас": "About us",
   "Главная": "Main",
-  "Войти": "Sign In"
+  "Войти": "Sign In",
+  "Введите имя пользователя": "Enter username",
+  "Введите пароль": "Enter password"
 }

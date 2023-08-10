@@ -1,4 +1,4 @@
-last: 39 ~22 min (React Portal)
+last: 32 ~15:32 min
 
 // Разобраться с ThemeProvider
 // Разобраться с useCallback()
