@@ -1,4 +1,4 @@
-last: 32 ~15:32 min
+last: 33 =21:35 min (create Text component)
 
 // Разобраться с ThemeProvider
 // Разобраться с useCallback()
