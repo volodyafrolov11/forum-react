@@ -25,5 +25,14 @@
       "password": "123"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "firstname": "Владимир",
+    "lastname": "Фролов",
+    "age": 21,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Kaluga",
+    "username": "admin",
+    "avatar": "https://avatars.mds.yandex.net/i?id=aabaf1abd441ea3c48d52efbb2ce8f0a_l-5232931-images-thumbs&n=13"
+  }
 }
