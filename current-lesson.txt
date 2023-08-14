@@ -1,4 +1,4 @@
-last: 33 =21:35 min (create Text component)
+last: 35 = 27:30 min (create DynamicModuleLoader)
 
 // Разобраться с ThemeProvider
 // Разобраться с useCallback()
