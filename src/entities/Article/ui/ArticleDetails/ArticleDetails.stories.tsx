@@ -6,7 +6,7 @@ import { ArticleDetails } from './ArticleDetails';
 import { Article, ArticleBlockType, ArticleType } from '../../model/types/article';
 
 export default {
-    title: 'entities/ArticleDetails',
+    title: 'entities/Article/ArticleDetails',
     component: ArticleDetails,
 } as ComponentMeta<typeof ArticleDetails>;
 
@@ -19,6 +19,10 @@ const article: Article = {
     img: 'https://teknotower.com/wp-content/uploads/2020/11/js.png',
     views: 1022,
     createdAt: '26.02.2022',
+    user: {
+        id: '1',
+        username: 'user 1',
+    },
     type: [ArticleType.IT],
     blocks: [
         {
