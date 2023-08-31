@@ -2,13 +2,13 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import { memo, useCallback } from 'react';
 import { Input } from 'shared/ui/Input/Input';
-import { Button } from 'shared/ui/Button/Button';
+import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { useSelector } from 'react-redux';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
-import cls from './AddCommentForm.module.scss';
-import { getAddCommentFormError, getAddCommentFormText } from '../../model/selectors/addCommentFormSelectors';
 import { addCommentFormActions, addCommentFormReducer } from '../../model/slices/addCommentFormSlice';
+import { getAddCommentFormError, getAddCommentFormText } from '../../model/selectors/addCommentFormSelectors';
+import cls from './AddCommentForm.module.scss';
 
 export interface AddCommentFormProps {
     className?: string;
@@ -19,11 +19,8 @@ const reducers: ReducersList = {
     addCommentForm: addCommentFormReducer,
 };
 
-const AddCommentForm = (props: AddCommentFormProps) => {
-    const {
-        className,
-        onSendComment,
-    } = props;
+const AddCommentForm = memo((props: AddCommentFormProps) => {
+    const { className, onSendComment } = props;
     const { t } = useTranslation();
     const text = useSelector(getAddCommentFormText);
     const error = useSelector(getAddCommentFormError);
@@ -48,6 +45,7 @@ const AddCommentForm = (props: AddCommentFormProps) => {
                     onChange={onCommentTextChange}
                 />
                 <Button
+                    theme={ButtonTheme.OUTLINE}
                     onClick={onSendHandler}
                 >
                     {t('Отправить')}
@@ -55,6 +53,6 @@ const AddCommentForm = (props: AddCommentFormProps) => {
             </div>
         </DynamicModuleLoader>
     );
-};
+});
 
-export default memo(AddCommentForm);
+export default AddCommentForm;
