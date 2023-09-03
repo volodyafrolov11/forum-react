@@ -18,5 +18,18 @@
   "Комментарии отсутсвуют": "There are no comments",
   "Введите текст комментария": "Enter the comment text",
   "Отправить": "Send",
-  "Читать далее..": "Read more.."
+  "Читать далее..": "Read more..",
+  "Сортировать по": "Sort by",
+  "Поиск": "Search",
+  "По": "by",
+  "возрастанию": "ascending",
+  "убыванию": "descending",
+  "дате создания": "date of creation",
+  "названию": "title",
+  "просмотрам": "views",
+  "Все": "All",
+  "Айти": "IT",
+  "Экономика": "Economics",
+  "Наука": "Science",
+  "Статьи не найдены": "Articles not found.."
 }
