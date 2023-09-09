@@ -35,5 +35,6 @@
   "FORUM APP": "FORUM APP",
   "Создать статью": "Create an article",
   "Укажите страну": "Choose country",
-  "Профиль пользователя": "User profile"
+  "Профиль пользователя": "User profile",
+  "Ошибка при загрузки статей!": "Error loading articles!"
 }

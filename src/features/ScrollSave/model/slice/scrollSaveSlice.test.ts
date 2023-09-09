@@ -11,7 +11,9 @@ describe('scrollSaveSlice.test', () => {
             position: 123,
         })))
             .toEqual({
-                '/articles': 123,
+                scroll: {
+                    '/articles': 123,
+                },
             });
     });
 });

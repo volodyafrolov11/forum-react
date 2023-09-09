@@ -6,7 +6,7 @@ import { Theme } from 'app/providers/ThemeProvider';
 import MainPage from './MainPage';
 
 export default {
-    title: 'pages/MainPage',
+    title: 'pages/MainPage/MainPage',
     component: MainPage,
 } as ComponentMeta<typeof MainPage>;
 
