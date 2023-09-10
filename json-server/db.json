@@ -1287,14 +1287,21 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN",
+      "roles": ["ADMIN"],
       "avatar": "https://avatars.mds.yandex.net/i?id=aabaf1abd441ea3c48d52efbb2ce8f0a_l-5232931-images-thumbs&n=13"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER",
+      "roles": ["USER"],
+      "avatar": "https://f.vividscreen.info/soft/32e57bb59f83e1924bc2571b882f5448/Dog-In-Funny-Costume-2048x2048.jpg"
+    },
+    {
+      "id": "3",
+      "username": "manager",
+      "password": "123",
+      "roles": ["MANAGER"],
       "avatar": "https://f.vividscreen.info/soft/32e57bb59f83e1924bc2571b882f5448/Dog-In-Funny-Costume-2048x2048.jpg"
     }
   ],
@@ -1319,6 +1326,17 @@
       "country": "Russia",
       "city": "Moscow",
       "username": "user",
+      "avatar": "https://f.vividscreen.info/soft/32e57bb59f83e1924bc2571b882f5448/Dog-In-Funny-Costume-2048x2048.jpg"
+    },
+    {
+      "id": "3",
+      "firstname": "Степанов",
+      "lastname": "Степан",
+      "age": 30,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "manager",
       "avatar": "https://f.vividscreen.info/soft/32e57bb59f83e1924bc2571b882f5448/Dog-In-Funny-Costume-2048x2048.jpg"
     }
   ]

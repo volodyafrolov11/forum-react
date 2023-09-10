@@ -6,7 +6,7 @@ import { Theme } from 'app/providers/ThemeProvider';
 import AboutPage from './AboutPage';
 
 export default {
-    title: 'pages/AboutPage/AboutPage',
+    title: 'pages/AdminPanelPage/AdminPanelPage',
     component: AboutPage,
 } as ComponentMeta<typeof AboutPage>;
 
