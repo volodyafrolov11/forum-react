@@ -42,7 +42,7 @@ export function Dropdown(props: DropdownProps) {
                 {trigger}
             </Menu.Button>
             <Menu.Items className={classNames(cls.menu, {}, menuClasses)}>
-                {items.map((item) => {
+                {items.map((item, index) => {
                     const content = ({ active }: {active: boolean}) => (
                         <button
                             disabled={item.disabled}
@@ -50,7 +50,7 @@ export function Dropdown(props: DropdownProps) {
                             onClick={item.onClick}
                             className={classNames(cls.item, { [cls.active]: active })}
                         >
-                            {item.content}
+                            {index}
                         </button>
                     );
 
