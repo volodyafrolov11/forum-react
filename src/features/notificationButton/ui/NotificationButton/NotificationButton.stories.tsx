@@ -3,6 +3,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import withMock from 'storybook-addon-mock';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
+// eslint-disable-next-line forum-react/public-api-imports
 import { Notification } from '@/entities/Notification/model/types/notification';
 import { NotificationButton } from './NotificationButton';
 
