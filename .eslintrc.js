@@ -23,8 +23,10 @@ module.exports = {
         'i18next',
         'react-hooks',
         'forum-react',
+        'unused-imports',
     ],
     rules: {
+        'unused-imports/no-unused-imports': 'error',
         'react/jsx-indent': [2, 4],
         indent: [2, 4],
         'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx'] }],

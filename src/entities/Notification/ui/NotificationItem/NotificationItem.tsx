@@ -1,5 +1,4 @@
 import { memo } from 'react';
-import { hrefTo } from '@storybook/addon-links';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Card, CardTheme } from '@/shared/ui/Card';
 import { Text } from '@/shared/ui/Text';
