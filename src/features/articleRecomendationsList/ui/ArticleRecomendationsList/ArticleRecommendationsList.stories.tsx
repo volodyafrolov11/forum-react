@@ -1,7 +1,8 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-
 import withMock from 'storybook-addon-mock';
+import Image from '@/shared/assets/tests/storybook.jpg';
+
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
 import { Article } from '@/entities/Article';
 import { ArticleRecommendationsList } from './ArticleRecommendationsList';
@@ -19,7 +20,7 @@ const Template: ComponentStory<typeof ArticleRecommendationsList> = (args) => <A
 
 const article: Article = {
     id: '1',
-    img: '',
+    img: Image,
     createdAt: '',
     views: 123,
     user: { id: '1', username: 'admin' },

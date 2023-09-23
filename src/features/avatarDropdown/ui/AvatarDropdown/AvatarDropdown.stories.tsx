@@ -4,6 +4,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
 import { UserRole } from '@/entities/User';
 import { AvatarDropdown } from './AvatarDropdown';
+import AvatarIcon from '@/shared/assets/tests/storybook.jpg';
 
 export default {
     title: 'features/AvatarDropdown',
@@ -20,7 +21,7 @@ Admin.decorators = [StoreDecorator({
             id: '1',
             username: 'admin',
             roles: [UserRole.ADMIN],
-            avatar: 'src/shared/assets/tests/storybook.jpg',
+            avatar: AvatarIcon,
         },
     },
 })];
@@ -33,7 +34,7 @@ Manager.decorators = [StoreDecorator({
             id: '1',
             username: 'moderator',
             roles: [UserRole.MANAGER],
-            avatar: 'src/shared/assets/tests/storybook.jpg',
+            avatar: AvatarIcon,
         },
     },
 })];
@@ -46,7 +47,7 @@ User.decorators = [StoreDecorator({
             id: '1',
             username: 'user',
             roles: [UserRole.USER],
-            avatar: 'src/shared/assets/tests/storybook.jpg',
+            avatar: AvatarIcon,
         },
     },
 })];
