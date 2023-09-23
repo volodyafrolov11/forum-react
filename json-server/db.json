@@ -1373,5 +1373,46 @@
       "username": "manager",
       "avatar": "https://f.vividscreen.info/soft/32e57bb59f83e1924bc2571b882f5448/Dog-In-Funny-Costume-2048x2048.jpg"
     }
+  ],
+  "article-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хорошая статья!",
+      "userId": "1",
+      "articleId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 5,
+      "feedback": "Супер статья!",
+      "userId": "2",
+      "articleId": "1"
+    },
+    {
+      "userId": "2",
+      "articleId": "39",
+      "rate": 3,
+      "feedback": "Не очень..",
+      "id": "lOXAjQ-"
+    },
+    {
+      "userId": "2",
+      "articleId": "2",
+      "rate": 5,
+      "id": "h3-AXsN"
+    },
+    {
+      "userId": "2",
+      "articleId": "3",
+      "rate": 2,
+      "id": "uaGg78a"
+    },
+    {
+      "userId": "2",
+      "articleId": "5",
+      "rate": 4,
+      "id": "94dDF5b"
+    }
   ]
 }
