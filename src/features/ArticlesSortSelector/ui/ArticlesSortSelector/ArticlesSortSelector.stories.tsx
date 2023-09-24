@@ -4,7 +4,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ArticlesSortSelector } from './ArticlesSortSelector';
 
 export default {
-    title: 'entities/Article/ArticlesSortSelector',
+    title: 'features/ArticlesSortSelector',
     component: ArticlesSortSelector,
 } as ComponentMeta<typeof ArticlesSortSelector>;
 
