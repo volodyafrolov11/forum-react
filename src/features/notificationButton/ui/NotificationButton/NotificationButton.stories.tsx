@@ -1,7 +1,6 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-import withMock from 'storybook-addon-mock';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
 // eslint-disable-next-line forum-react/public-api-imports
 import { Notification } from '@/entities/Notification/model/types/notification';
@@ -10,7 +9,6 @@ import { NotificationButton } from './NotificationButton';
 export default {
     title: 'features/NotificationButton',
     component: NotificationButton,
-    decorators: [withMock],
 } as ComponentMeta<typeof NotificationButton>;
 
 const Template: ComponentStory<typeof NotificationButton> = (args) => <NotificationButton {...args} />;
