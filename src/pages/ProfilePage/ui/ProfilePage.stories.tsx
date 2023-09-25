@@ -27,6 +27,7 @@ ProfilePageLight.decorators = [StoreDecorator({
             firstname: 'Vladimir',
             city: 'Kaluga',
             currency: Currency.RUB,
+            avatar: 'http://images.vfl.ru/ii/1537256476/2904dfe8/23384507.jpg',
         },
     },
 })];

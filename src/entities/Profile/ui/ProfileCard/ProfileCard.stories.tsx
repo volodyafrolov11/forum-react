@@ -2,7 +2,7 @@ import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Country } from '@/entities/Country';
 import { Currency } from '@/entities/Currency';
-import Avatar from '@/shared/assets/tests/storybook.jpg';
+// import Avatar from '@/shared/assets/tests/storybook.jpg';
 import { ProfileCard } from './ProfileCard';
 
 export default {
@@ -23,7 +23,7 @@ Primary.args = {
         firstname: 'Vladimir',
         city: 'Kaluga',
         currency: Currency.RUB,
-        avatar: Avatar,
+        avatar: 'http://images.vfl.ru/ii/1537256476/2904dfe8/23384507.jpg',
     },
 };
 
