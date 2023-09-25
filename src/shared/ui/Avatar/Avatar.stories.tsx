@@ -22,3 +22,9 @@ Small.args = {
     size: 50,
     src: AvatarImg,
 };
+
+export const Error = Template.bind({});
+Error.args = {
+    size: 50,
+    src: undefined,
+};
