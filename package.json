@@ -129,7 +129,8 @@
     "react-virtualized": "^9.22.3"
   },
   "lint-staged": {
-    "**/*.{ts,tsx}": "eslint"
+    "**/*.{ts,tsx}": "eslint",
+    "**/*.scss": "stylelint"
   },
   "loki": {
     "configurations": {
