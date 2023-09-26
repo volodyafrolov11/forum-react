@@ -1,5 +1,5 @@
-import { Navigate, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import { Navigate, useLocation } from 'react-router-dom';
 import { useMemo } from 'react';
 import { getUserAuthData, getUserRoles, UserRole } from '@/entities/User';
 import { getRouteForbidden, getRouteMain } from '@/shared/const/router';
@@ -9,12 +9,7 @@ interface RequireAuthProps {
     roles?: UserRole[];
 }
 
-export function RequireAuth(pros: RequireAuthProps) {
-    const {
-        children,
-        roles,
-    } = pros;
-
+export function RequireAuth({ children, roles }: RequireAuthProps) {
     const auth = useSelector(getUserAuthData);
     const location = useLocation();
     const userRoles = useSelector(getUserRoles);
