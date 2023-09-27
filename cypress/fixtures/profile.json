@@ -1,0 +1,11 @@
+{
+  "id": "1",
+  "firstname": "Test",
+  "lastname": "Test",
+  "age": 30,
+  "currency": "RUB",
+  "country": "Russia",
+  "city": "Moscow",
+  "username": "test-user",
+  "avatar": "https://f.vividscreen.info/soft/32e57bb59f83e1924bc2571b882f5448/Dog-In-Funny-Costume-2048x2048.jpg"
+}
