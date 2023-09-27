@@ -10,7 +10,9 @@ export default {
     component: PageError,
 } as ComponentMeta<typeof PageError>;
 
-const Template: ComponentStory<typeof PageError> = (args) => <PageError {...args} />;
+const Template: ComponentStory<typeof PageError> = (args) => (
+    <PageError {...args} />
+);
 
 export const PageErrorLight = Template.bind({});
 PageErrorLight.args = {};

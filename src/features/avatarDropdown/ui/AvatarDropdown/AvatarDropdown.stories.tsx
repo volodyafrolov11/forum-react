@@ -11,43 +11,51 @@ export default {
     component: AvatarDropdown,
 } as ComponentMeta<typeof AvatarDropdown>;
 
-const Template: ComponentStory<typeof AvatarDropdown> = (args) => <AvatarDropdown {...args} />;
+const Template: ComponentStory<typeof AvatarDropdown> = (args) => (
+    <AvatarDropdown {...args} />
+);
 
 export const Admin = Template.bind({});
 Admin.args = {};
-Admin.decorators = [StoreDecorator({
-    user: {
-        authData: {
-            id: '1',
-            username: 'admin',
-            roles: [UserRole.ADMIN],
-            avatar: AvatarIcon,
+Admin.decorators = [
+    StoreDecorator({
+        user: {
+            authData: {
+                id: '1',
+                username: 'admin',
+                roles: [UserRole.ADMIN],
+                avatar: AvatarIcon,
+            },
         },
-    },
-})];
+    }),
+];
 
 export const Manager = Template.bind({});
 Manager.args = {};
-Manager.decorators = [StoreDecorator({
-    user: {
-        authData: {
-            id: '1',
-            username: 'moderator',
-            roles: [UserRole.MANAGER],
-            avatar: AvatarIcon,
+Manager.decorators = [
+    StoreDecorator({
+        user: {
+            authData: {
+                id: '1',
+                username: 'moderator',
+                roles: [UserRole.MANAGER],
+                avatar: AvatarIcon,
+            },
         },
-    },
-})];
+    }),
+];
 
 export const User = Template.bind({});
 User.args = {};
-User.decorators = [StoreDecorator({
-    user: {
-        authData: {
-            id: '1',
-            username: 'user',
-            roles: [UserRole.USER],
-            avatar: AvatarIcon,
+User.decorators = [
+    StoreDecorator({
+        user: {
+            authData: {
+                id: '1',
+                username: 'user',
+                roles: [UserRole.USER],
+                avatar: AvatarIcon,
+            },
         },
-    },
-})];
+    }),
+];

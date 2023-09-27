@@ -13,24 +13,28 @@ export default {
     component: ProfilePage,
 } as ComponentMeta<typeof ProfilePage>;
 
-const Template: ComponentStory<typeof ProfilePage> = (args) => <ProfilePage {...args} />;
+const Template: ComponentStory<typeof ProfilePage> = (args) => (
+    <ProfilePage {...args} />
+);
 
 export const ProfilePageLight = Template.bind({});
 ProfilePageLight.args = {};
-ProfilePageLight.decorators = [StoreDecorator({
-    profile: {
-        form: {
-            username: 'admin',
-            age: 21,
-            country: Country.Russia,
-            lastname: 'Frolov',
-            firstname: 'Vladimir',
-            city: 'Kaluga',
-            currency: Currency.RUB,
-            avatar: 'http://images.vfl.ru/ii/1537256476/2904dfe8/23384507.jpg',
+ProfilePageLight.decorators = [
+    StoreDecorator({
+        profile: {
+            form: {
+                username: 'admin',
+                age: 21,
+                country: Country.Russia,
+                lastname: 'Frolov',
+                firstname: 'Vladimir',
+                city: 'Kaluga',
+                currency: Currency.RUB,
+                avatar: 'http://images.vfl.ru/ii/1537256476/2904dfe8/23384507.jpg',
+            },
         },
-    },
-})];
+    }),
+];
 
 export const ProfilePageDark = Template.bind({
     profile: {

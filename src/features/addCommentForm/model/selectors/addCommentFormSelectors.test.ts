@@ -1,5 +1,8 @@
 import { StateSchema } from '@/app/providers/StoreProvider';
-import { getAddCommentFormError, getAddCommentFormText } from './addCommentFormSelectors';
+import {
+    getAddCommentFormError,
+    getAddCommentFormText,
+} from './addCommentFormSelectors';
 
 describe('addCommentFormSelectors.test', () => {
     test('should return text', () => {
@@ -8,7 +11,9 @@ describe('addCommentFormSelectors.test', () => {
                 text: 'some text',
             },
         };
-        expect(getAddCommentFormText(state as StateSchema)).toEqual('some text');
+        expect(getAddCommentFormText(state as StateSchema)).toEqual(
+            'some text',
+        );
     });
 
     test('getAddCommentFormText selector should work with empty state', () => {

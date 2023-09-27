@@ -30,7 +30,9 @@ describe('ользователь заходит на страницу стать
         cy.get('[data-selected=true]').should('have.length', 4);
     });
     it('и ставит оценку (на стабах)', () => {
-        cy.intercept('GET', '**/articles/*', { fixture: 'article-details.json' });
+        cy.intercept('GET', '**/articles/*', {
+            fixture: 'article-details.json',
+        });
         cy.getByTestId('ArticleDetails.Info');
         cy.getByTestId('RatingCard').scrollIntoView();
         cy.setRate(4, 'feedback');

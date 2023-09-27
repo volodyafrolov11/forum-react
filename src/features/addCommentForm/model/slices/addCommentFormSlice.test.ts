@@ -1,4 +1,7 @@
-import { addCommentFormActions, addCommentFormReducer } from './addCommentFormSlice';
+import {
+    addCommentFormActions,
+    addCommentFormReducer,
+} from './addCommentFormSlice';
 import { AddCommentFormSchema } from '../types/addCommentForm';
 
 describe('loginSlice.test', () => {
@@ -6,7 +9,11 @@ describe('loginSlice.test', () => {
         const state: DeepPartial<AddCommentFormSchema> = {
             text: '',
         };
-        expect(addCommentFormReducer(state as AddCommentFormSchema, addCommentFormActions.setText('some text')))
-            .toEqual({ text: 'some text' });
+        expect(
+            addCommentFormReducer(
+                state as AddCommentFormSchema,
+                addCommentFormActions.setText('some text'),
+            ),
+        ).toEqual({ text: 'some text' });
     });
 });

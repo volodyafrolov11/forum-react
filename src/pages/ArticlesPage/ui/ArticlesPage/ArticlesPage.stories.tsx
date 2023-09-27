@@ -9,16 +9,20 @@ export default {
     component: ArticlesPage,
 } as ComponentMeta<typeof ArticlesPage>;
 
-const Template: ComponentStory<typeof ArticlesPage> = (args) => <ArticlesPage {...args} />;
+const Template: ComponentStory<typeof ArticlesPage> = (args) => (
+    <ArticlesPage {...args} />
+);
 
 export const Primary = Template.bind({});
 Primary.args = {};
-Primary.decorators = [StoreDecorator({
-    articlesPage: {
-        page: 1,
-        hasMore: false,
-        isLoading: false,
-        ids: [],
-        entities: {},
-    },
-})];
+Primary.decorators = [
+    StoreDecorator({
+        articlesPage: {
+            page: 1,
+            hasMore: false,
+            isLoading: false,
+            ids: [],
+            entities: {},
+        },
+    }),
+];
