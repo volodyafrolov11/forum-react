@@ -1252,6 +1252,10 @@
             "username": "admin",
             "password": "123",
             "roles": ["ADMIN"],
+            "features": {
+                "isArticleRatingEnabled": true,
+                "isArticleRecommendationListEnabled": true
+            },
             "avatar": "https://avatars.mds.yandex.net/i?id=aabaf1abd441ea3c48d52efbb2ce8f0a_l-5232931-images-thumbs&n=13"
         },
         {
@@ -1259,6 +1263,10 @@
             "username": "user",
             "password": "123",
             "roles": ["USER"],
+            "features": {
+                "isArticleRatingEnabled": false,
+                "isArticleRecommendationListEnabled": true
+            },
             "avatar": "https://f.vividscreen.info/soft/32e57bb59f83e1924bc2571b882f5448/Dog-In-Funny-Costume-2048x2048.jpg"
         },
         {
@@ -1266,6 +1274,10 @@
             "username": "manager",
             "password": "123",
             "roles": ["MANAGER"],
+            "features": {
+                "isArticleRatingEnabled": true,
+                "isCounterEnabled": true
+            },
             "avatar": "https://f.vividscreen.info/soft/32e57bb59f83e1924bc2571b882f5448/Dog-In-Funny-Costume-2048x2048.jpg"
         },
         {
@@ -1273,6 +1285,10 @@
             "username": "test-user",
             "password": "123",
             "roles": ["ADMIN", "MANAGER", "USER"],
+            "features": {
+                "isArticleRatingEnabled": true,
+                "isCounterEnabled": true
+            },
             "avatar": "https://f.vividscreen.info/soft/32e57bb59f83e1924bc2571b882f5448/Dog-In-Funny-Costume-2048x2048.jpg"
         }
     ],

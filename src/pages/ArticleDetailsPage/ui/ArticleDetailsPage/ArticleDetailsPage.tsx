@@ -1,4 +1,3 @@
-import { useTranslation } from 'react-i18next';
 import { memo } from 'react';
 import { useParams } from 'react-router-dom';
 import { ArticleDetails } from '@/entities/Article';
@@ -14,6 +13,7 @@ import { ArticleDetailsComments } from '../ArticleDetailsComments/ArticleDetails
 import { ArticleDetailsPageHeader } from '../ArticleDetailsPageHeader/ArticleDetailsPageHeader';
 import { articleDetailsPageReducer } from '../../model/slice/index';
 import { ArticleRating } from '@/features/articleRating';
+import { getFeatureFlag } from '@/shared/lib/features';
 
 interface ArticleDetailsPageProps {
     className?: string;
@@ -24,8 +24,11 @@ const reducers: ReducersList = {
 };
 
 const ArticleDetailsPage = ({ className }: ArticleDetailsPageProps) => {
-    const { t } = useTranslation('article-details');
     const { id } = useParams<{ id: string }>();
+    const isArticleRatingEnabled = getFeatureFlag('isArticleRatingEnabled');
+    const isArticleRecommendationListEnabled = getFeatureFlag(
+        'isArticleRecommendationListEnabled',
+    );
 
     if (!id) {
         return null;
@@ -37,8 +40,10 @@ const ArticleDetailsPage = ({ className }: ArticleDetailsPageProps) => {
                 <VStack gap="16" max>
                     <ArticleDetailsPageHeader />
                     <ArticleDetails id={id} />
-                    <ArticleRating articleId={id} />
-                    <ArticleRecommendationsList />
+                    {isArticleRatingEnabled && <ArticleRating articleId={id} />}
+                    {isArticleRecommendationListEnabled && (
+                        <ArticleRecommendationsList />
+                    )}
                     <ArticleDetailsComments id={id} />
                 </VStack>
             </Page>
